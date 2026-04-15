@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.badlogicgames.gdx-video:gdx-video-desktop:1.3.3" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.badlogicgames.gdx-video" artifactId="gdx-video-desktop" version="1.3.3" baseVersion="1.3.3" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx-video/gdx-video-desktop/1.3.3/9c52feb939360af4398f53336bb7150d61110f09/gdx-video-desktop-1.3.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx-video/gdx-video-desktop/1.3.3/fd9647359395f04f0f242d9f4690cd1cd0bc4a58/gdx-video-desktop-1.3.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

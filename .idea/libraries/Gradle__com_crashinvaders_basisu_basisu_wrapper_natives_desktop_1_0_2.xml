@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.crashinvaders.basisu:basisu-wrapper:natives-desktop:1.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.crashinvaders.basisu" artifactId="basisu-wrapper" version="1.0.2" baseVersion="1.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crashinvaders.basisu/basisu-wrapper/1.0.2/ab818736c691678657c8d75a0eb29838f73f213f/basisu-wrapper-1.0.2-natives-desktop.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crashinvaders.basisu/basisu-wrapper/1.0.2/a174df8bafb2dbeaf2500808fd28ab5db9a4bc70/basisu-wrapper-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.crashinvaders.basisu:basisu-gdx:1.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.crashinvaders.basisu" artifactId="basisu-gdx" version="1.0.2" baseVersion="1.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crashinvaders.basisu/basisu-gdx/1.0.2/256f6e905213d080786243af2ffe9ba2e1627d38/basisu-gdx-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.crashinvaders.basisu/basisu-gdx/1.0.2/a35a8a909971e40c35876c45b323e35eb7e9c279/basisu-gdx-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

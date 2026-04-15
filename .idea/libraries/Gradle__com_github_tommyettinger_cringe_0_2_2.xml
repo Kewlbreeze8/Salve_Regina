@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tommyettinger:cringe:0.2.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.tommyettinger" artifactId="cringe" version="0.2.2" baseVersion="0.2.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tommyettinger/cringe/0.2.2/c0e69875049a2755d2906a7e03f999a2149727da/cringe-0.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tommyettinger/cringe/0.2.2/de67abbd2488ec535f33390e19e5634ea998662d/cringe-0.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

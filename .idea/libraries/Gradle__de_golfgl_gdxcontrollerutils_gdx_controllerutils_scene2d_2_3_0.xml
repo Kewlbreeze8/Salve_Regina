@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: de.golfgl.gdxcontrollerutils:gdx-controllerutils-scene2d:2.3.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="de.golfgl.gdxcontrollerutils" artifactId="gdx-controllerutils-scene2d" version="2.3.0" baseVersion="2.3.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.golfgl.gdxcontrollerutils/gdx-controllerutils-scene2d/2.3.0/f9a865856302ec274e78f2963cf7936bcd09e4a8/gdx-controllerutils-scene2d-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.golfgl.gdxcontrollerutils/gdx-controllerutils-scene2d/2.3.0/6e67e89697c0df04553d0de9ff9db5322fe5f723/gdx-controllerutils-scene2d-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
