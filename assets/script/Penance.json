@@ -1,0 +1,79 @@
+{
+  "defaults": { "penance": 50 },
+
+  "statRules": [
+
+    {
+      "onNodeEnter": "Out",
+      "statChange": { "penance": 0 }
+    },
+
+    {
+      "onNodeEnter": "Stay",
+      "statChange": { "penance": 0 }
+    },
+
+    {
+      "onNodeEnter": "MotherReveal",
+      "statChange": { "penance": 0 }
+    },
+
+    {
+      "onNodeEnter": "Pills",
+      "statChange": { "penance": -10 }
+    },
+
+    {
+      "onNodeEnter": "Pray",
+      "statChange": { "penance": 10 }
+    },
+
+    {
+      "onNodeEnter": "PathPsych",
+      "statChange": { "penance": -10 }
+    },
+
+    {
+      "onNodeEnter": "PathPriest",
+      "statChange": { "penance": 10 }
+    },
+
+    {
+      "onNodeEnter": "VisitFather",
+      "statChange": { "penance": 10 }
+    },
+
+    {
+      "onNodeEnter": "BurnPapers",
+      "statChange": { "penance": -10 }
+    },
+
+    {
+      "onNodeEnter": "Praise",
+      "statChange": { "penance": 10 }
+    },
+
+    {
+      "onNodeEnter": "Drugs",
+      "statChange": { "penance": -10 }
+    },
+
+    {
+      "onNodeEnter": "Break",
+      "statChange": { "penance": -20 }
+    },
+
+    {
+      "onNodeEnter": "Stab",
+      "statChange": { "penance": 20 }
+    }
+
+  ],
+
+  "endingRules": {
+    "stat": "penance",
+    "threshold": 50,
+    "trueEnding": "true_ecstasy",
+    "falseEnding": "false_guilt"
+  }
+}

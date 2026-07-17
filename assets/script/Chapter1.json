@@ -1,0 +1,750 @@
+{
+  "chapter": "Chapter1",
+  "startNode": "Psychiatrist",
+  "nodes": [
+    {
+      "id": "Psychiatrist",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeBG", "value": "Therapy" },
+        { "type": "changeTextbox", "value": "Textbox1" },
+        { "type": "playBGM", "value": "Calm.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "The clock strikes at 9 AM, and the Psychiatrist is preparing her session." },
+        { "speaker": "Narrator", "text": "Within a few minutes, Elsa has arrived." },
+
+        { "action": { "type": "setSprite", "character": "Psychiatrist", "expression": "1", "slot": "left" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Good morning, Elsa! Here's your monthly prescription." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Calm", "slot": "right" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "Good morning, Miss... and thank you." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Are you feeling well? Any strange dreams again?" },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "I am... alright. No dreams last night... just cold and... empty." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "That's good to hear. Usually your dreams would incite violent reactions towards yourself." },
+        { "speaker": "Psychiatrist", "text": "What about your recent thoughts? Have they been disturbing you?" },
+
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Neutral", "slot": "right" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "I’m... not sure. I don’t want to think about it that much." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Well, I'm always here to help. In the end, change still lies within you." },
+        { "speaker": "Psychiatrist", "text": "I know that your past has traumatized you, but we can keep working together to solve this problem. Okay?" },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Calm", "slot": "right" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "... Thank you." },
+        { "speaker": "Elsa", "text": "I will... take my leave now." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Be safe now, dear." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry", "slot": "right" } },
+        { "speaker": "Elsa", "text": "..." },
+
+        { "action": { "type": "clearSprite", "character": "Psychiatrist", "slot": "left" } },
+        { "action": { "type": "clearSprite", "character": "Elsa", "slot": "right" } }
+      ],
+      "next": "Confession"
+    },
+
+
+
+
+    {
+      "id": "Confession",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeBG", "value": "Church1" },
+        { "type": "changeTextbox", "value": "Textbox1" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "Before heading home, Elsa decided to visit the Church." },
+        { "speaker": "Narrator", "text": "Where she look around the area and notices the confessional booth." },
+        { "speaker": "Narrator", "text": "She quietly stepped into one of the confession booths to speak with the Priest." },
+
+        { "action": { "type": "changeBG", "value": "ConfessionBooth1" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "Father... I have a confession to make..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePriest1" } },
+        { "speaker": "Priest", "text": "What troubles you today, my child?" },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "I feel like... God has abandoned me." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePriest1" } },
+        { "speaker": "Priest", "text": "Oh, my child... My dear child of God... God will never abandon you, and you know that." },
+        { "speaker": "Priest", "text": "You must never let your faith be shaken by evil. Always walk the path of light." },
+        { "speaker": "Priest", "text": "No matter how many things the Devil says, Always remember that God will protect you." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "... Thank you, Father. I knew I could rely on you." },
+        { "speaker": "Elsa", "text": "I hope this darkness in my heart disappears soon." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePriest1" } },
+        { "speaker": "Priest", "text": "May God be with you, my child." },
+
+        { "action": { "type": "stopBGM", "value": "Calm.mp3", "fade": true } }
+      ],
+      "next": "House"
+    },
+
+
+
+
+    {
+      "id": "House",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeBG", "value": "Home1" },
+        { "type": "changeTextbox", "value": "Textbox1" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "On her way home, she felt a sudden heavy feeling pressing against her chest." },
+        { "action": { "type": "changeFontColor", "value": "#000000" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "My head's getting hazy... Was it the Pills?" },
+        { "speaker": "Elsa", "text": "No... I hope its not..." },
+        { "speaker": "Elsa", "text": "I... I need to rest..." },
+
+        { "action": { "type": "changeFontColor", "value": "#ffffff" } },
+        { "action": { "type": "changeBG", "value": "Intro1" } },
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+
+        { "speaker": "Narrator", "text": "Thud!" },
+        { "speaker": "Narrator", "text": "She heard a noise in the living room..." },
+        { "speaker": "Narrator", "text": "Hesitantly, she approached the living room door..." }
+      ],
+      "next": "Choice 1"
+    },
+
+
+
+
+    {
+      "id": "Choice 1",
+      "type": "choice",
+      "actions": [],
+      "lines": [
+        { "speaker": "Narrator", "text": "..." }
+      ],
+      "choices": [
+        { "text": "Open the door", "next": "MotherReveal" },
+        { "text": "Gently open the door", "next": "MotherReveal" }
+      ]
+    },
+
+
+
+
+    {
+      "id": "MotherReveal",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeFontColor", "value": "#000000" },
+        { "type": "changeBG", "value": "LivingRoom4" },
+        { "type": "changeTextbox", "value": "Textbox2" },
+        { "type": "playSFX", "value": "Sting.wav" },
+        { "type": "playBGM", "value": "HappyHouse.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": " " },
+
+        { "action": { "type": "changeBG", "value": "LivingRoom3" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Petrified" } },
+        { "speaker": "Elsa", "text": "..." },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "speaker": "Narrator", "text": "Her body froze as her eyes widened, staring at the undulating, and twisted yet familiar figure." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "M-Mom!?" },
+        { "speaker": "Elsa", "text": "Mom, is that you?" }
+      ],
+      "next": "Choice 2"
+    },
+
+
+
+
+    {
+      "id": "Choice 2",
+      "type": "choice",
+      "actions": [],
+      "lines": [
+        { "speaker": "Elsa", "text": "No... No, that can't be real... That can't be her..." }
+      ],
+      "choices": [
+        {
+          "text": "Take pills to calm her mind",
+          "next": "Pills",
+          "effects": [{ "penance": -10 }]
+        },
+        {
+          "text": "Pray",
+          "next": "Pray",
+          "effects": [{ "penance": 10 }]
+        }
+      ]
+    },
+
+
+
+
+    {
+      "id": "Pills",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeSprite", "character": "Elsa", "expression": "Despair" },
+        { "type": "changeTextbox", "value": "Textbox2" },
+        { "type": "stopBGM", "value": "HappyHouse.mp3", "fade": true }
+      ],
+      "lines": [
+        { "action": { "type": "changeBG", "value": "LivingRoom2" } },
+        { "speaker": "Narrator", "text": "She shakes her head and checks her pockets. She takes the pills and forces them down. The vision fades slowly." }
+      ],
+      "next": "Bed"
+    },
+
+
+
+
+    {
+      "id": "Pray",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeSprite", "character": "Elsa", "expression": "Pray" },
+        { "type": "changeTextbox", "value": "Textbox2" },
+        { "type": "stopBGM", "value": "HappyHouse.mp3", "fade": true }
+      ],
+      "lines": [
+        { "action": { "type": "changeBG", "value": "LivingRoom2" } },
+        { "speaker": "Narrator", "text": "She closes her eyes and begins to pray. Her words tremble as the vision begins to fade." }
+      ],
+      "next": "Bed"
+    },
+
+
+
+
+    {
+      "id": "Bed",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeFontColor", "value": "#ffffff" },
+        { "type": "changeSprite", "character": "Elsa", "expression": "Worry" },
+        { "type": "changeTextbox", "value": "TextboxDialogueElsa1" },
+        { "type": "changeBG", "value": "LivingRoom1" },
+        { "type": "playBGM", "value": "Default.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Elsa", "text": "W-what was that...? The devil's trick?" },
+        { "speaker": "Elsa", "text": "I hope it's not..." },
+        { "speaker": "Elsa", "text": "..." },
+        { "speaker": "Elsa", "text": "Ugh, I'm exhausted. I really need some rest..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeBG", "value": "Bedroom1" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "speaker": "Narrator", "text": "Before heading to bed, she kneels down beside the bed and prays" },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "Lord, If you're there... I've come to ask for forgiveness..." },
+        { "speaker": "Elsa", "text": "Whether it's my Parents' sin for leaving me in this house, or my Sister went missing from their abandonment..." },
+        { "speaker": "Elsa", "text": "Please guide my Sister to a bright path, wash me away from my sins..." },
+        { "speaker": "Elsa", "text": "And Lord... I hope that you'll forgive my Family's sins..." },
+        { "speaker": "Elsa", "text": "In the name of the Father, Son and of the Holy Spirit..." },
+        { "speaker": "Elsa", "text": "Amen..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "speaker": "Narrator", "text": "Feeling exhausted from earlier, Elsa head to bed and fell asleep, drifting into one of her dreams..." },
+
+        { "action": { "type": "stopBGM", "value": "Default.mp3", "fade": true } }
+      ],
+      "next": "Dream"
+    },
+
+
+
+
+    {
+      "id": "Dream",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeFontColor", "value": "#000000" },
+        { "type": "changeBG", "value": "Intro1" },
+        { "type": "changeTextbox", "value": "Textbox2" },
+        { "type": "playBGM", "value": "Dream.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "As she slowly drifted into her dreams, It was just pitch black void, stretching endlessly." },
+
+        { "action": { "type": "changeBG", "value": "Dream1" } },
+        { "speaker": "Narrator", "text": "Until she suddenly stumbled upon a familiar statue." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Neutral" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "What...? What is this? Where am I?" },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Calm" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "speaker": "Narrator", "text": "She noticed a silhouette in the distance..." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "Hello...? Who's out there?" },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "setSprite", "character": "FatherPast" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "speaker": "Narrator", "text": "As the figure slowly emerged from the darkness, she recognized the familiar outline..." },
+
+        { "action": { "type": "clearSprite", "character": "FatherPast" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Petrified" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "... Dad?" },
+        { "speaker": "Elsa", "text": "Dad? Is that you?" },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Petrified" } },
+        { "action": { "type": "setSprite", "character": "FatherPast" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueFather2" } },
+        { "speaker": "Father", "text": "..." },
+
+        { "action": { "type": "clearSprite", "character": "FatherPast" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "Dad? If that's you... Why did you leave us?" },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "setSprite", "character": "FatherPast" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueFather2" } },
+        { "speaker": "Father", "text": "..." },
+
+        { "action": { "type": "clearSprite", "character": "FatherPast" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "Why did you leave us? Is our family not enough for you?" },
+        { "speaker": "Elsa", "text": "What happened to you and Mom? Did you even hurt Mom!? Did she do something bad to you?" },
+        { "speaker": "Elsa", "text": "Did you even know where my Sister went? Is she still alive???" },
+        { "speaker": "Elsa", "text": "I need to know, Dad. Why did you left us to die!?" },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "setSprite", "character": "FatherPast" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueFather2" } },
+        { "speaker": "Father", "text": "..." },
+
+        { "action": { "type": "clearSprite", "character": "FatherPast" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Despair" } },
+        { "speaker": "Elsa", "text": "..." },
+        { "speaker": "Elsa", "text": "I need to know..." },
+        { "speaker": "Elsa", "text": "Answer me, Dad..." },
+        { "speaker": "Elsa", "text": "Answer me... Please..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "setSprite", "character": "FatherPast" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueFather2" } },
+        { "speaker": "Father", "text": "..." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Angry" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "ANSWER ME!!" },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Angry" } },
+        { "action": { "type": "playBGM", "value": "Dream.mp3"} }
+      ],
+      "next": "WakeUp"
+    },
+
+
+
+
+    {
+      "id": "WakeUp",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeFontColor", "value": "#ffffff" },
+        { "type": "changeBG", "value": "Intro3" },
+        { "type": "changeTextbox", "value": "TextboxDialogueElsa1" },
+        { "type": "playBGM", "value": "Default.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Elsa", "text": "DAD!!!" },
+        { "speaker": "Elsa", "text": "..." },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "speaker": "Narrator", "text": "Elsa checked the time and it was 8 in the Morning." },
+        { "speaker": "Narrator", "text": "She took a breather first, whilst thinking her thoughts about the dream she had experienced." },
+        { "speaker": "Narrator", "text": "She sits back up in bed and wonders at the window..." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "It’s a new day... I wonder why my Dad's in that dream..." },
+        { "speaker": "Elsa", "text": "There has to be a reason..." }
+      ],
+      "next": "Choice 3"
+    },
+
+
+
+
+    {
+      "id": "Choice 3",
+      "type": "choice",
+      "actions": [
+        { "type": "changeFontColor", "value": "#000000" },
+        { "type": "changeTextbox", "value": "TextboxDialogueElsa2" }
+      ],
+      "lines": [
+        { "speaker": "Elsa", "text": "I need answers..." }
+      ],
+      "choices": [
+        {
+          "text": "To Psychiatrist",
+          "next": "PathPsych",
+          "effects": [{ "penance": -10 }]
+        },
+        {
+          "text": "To Confessional Booth",
+          "next": "PathPriest",
+          "effects": [{ "penance": 10 }]
+        }
+      ]
+    },
+
+
+
+
+    { "id": "PathPsych", "type": "dialogue", "actions": [
+      { "type": "changeFontColor", "value": "#ffffff" },
+      { "type": "changeBG", "value": "Therapy" },
+      { "type": "changeTextbox", "value": "Textbox1" },
+      { "type": "stopBGM", "value": "Default.mp3", "fade": true },
+      { "type": "playBGM", "value": "Calm.mp3", "fade": true }
+    ],
+      "lines": [
+        { "speaker": "Narrator", "text": "Elsa returned to her appointment once again." },
+        { "speaker": "Narrator", "text": "The Psychiatrist noticed her and approached calmly." },
+
+        { "action": { "type": "setSprite", "character": "Psychiatrist", "expression": "1", "slot": "left" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Good morning, Elsa. Here for another session for today?" },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry", "slot": "right" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "Not exactly, but I do want to ask something." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Oh? Go ahead. I'm all ears." },
+
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Despair", "slot": "right" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "...Did God took my Dad away?" },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "..." },
+        { "speaker": "Psychiatrist", "text": "God has... different plans for all of us, dear." },
+        { "speaker": "Psychiatrist", "text": "I'm not sure about your father though." },
+        { "speaker": "Psychiatrist", "text": "You did told me in the previous sessions that he left you and your family right?" },
+        { "speaker": "Psychiatrist", "text": "I'm sure God has plans for him in the end." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "...I suppose that's true..." },
+        { "speaker": "Elsa", "text": "But it's still hard to accept that he wronged us... That he left me and my family behind." },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "speaker": "Narrator", "text": "Suddenly, a heavy feeling settles over the room." },
+
+        { "action": { "type": "changeSprite", "character": "Psychiatrist", "expression": "2", "slot": "left" } },
+        { "action": { "type": "changeFontColor", "value": "#000000" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueMother2" } },
+        { "speaker": "Mother", "text": "Your father never wanted to see us, Elsa. Pray harder to will his ignorance away." },
+        { "speaker": "Mother", "text": "Head back home and you'll find your answers there..." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "I..." },
+        { "speaker": "Elsa", "text": "I understand..." },
+
+        { "action": { "type": "changeSprite", "character": "Psychiatrist", "expression": "1", "slot": "left" } },
+        { "action": { "type": "changeFontColor", "value": "#ffffff" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Hmm? You were saying something, dear?" },
+
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Petrified", "slot": "right" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "Huh? Oh." },
+        { "speaker": "Elsa", "text": "I-it's nothing." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Hmm... Well if you came here for your prescription pill refill, here." },
+
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Worry", "slot": "right" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "speaker": "Narrator", "text": "The Psychiatrist gave her another set of pills. Use it wisely." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "There we go. I hope this will ease your current situation." },
+        { "speaker": "Psychiatrist", "text": "Since we're trying to fix your problem and all." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "... Thanks." },
+        { "speaker": "Elsa", "text": "I'll uhh... Head back home now..." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePsychiatrist1" } },
+        { "speaker": "Psychiatrist", "text": "Ok. Stay safe, dear." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry", "slot": "right" } },
+        { "action": { "type": "clearSprite", "character": "Psychiatrist", "expression": "1", "slot": "left" } },
+        { "action": { "type": "stopBGM", "value": "Calm.mp3", "fade": true } }
+      ],
+      "next": "Search"
+    },
+
+
+
+
+    {
+      "id": "PathPriest",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeFontColor", "value": "#ffffff" },
+        { "type": "changeBG", "value": "Church1" },
+        { "type": "changeTextbox", "value": "Textbox1" },
+        { "type": "playBGM", "value": "Calm.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "Elsa returned to the Church and gave her prayers." },
+        { "speaker": "Narrator", "text": "As she quietly entered one of the confession booths to speak with the Priest." },
+
+        { "action": { "type": "changeBG", "value": "ConfessionBooth1" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "Father... I have a question..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Pray" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePriest1" } },
+        { "speaker": "Priest", "text": "Ask forth, my child. I'm listening." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "...Did God took my Dad away?" },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePriest1" } },
+        { "speaker": "Priest", "text": "Oh, my child... Perhaps your father was never part of His plan." },
+        { "speaker": "Priest", "text": "And God... has other plans." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "...I suppose that's true..." },
+        { "speaker": "Elsa", "text": "But it’s still hard to accept that he abandoned me and my family..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "speaker": "Narrator", "text": "Suddenly, a strange weight hangs in the air." },
+
+        { "action": { "type": "changeFontColor", "value": "#000000" } },
+        { "action": { "type": "changeBG", "value": "ConfessionBooth2" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueMother2" } },
+        { "speaker": "Mother", "text": "Your father never wanted to see us, Elsa. Your prayers won’t bring him back." },
+        { "speaker": "Mother", "text": "Head back home and you'll find your answers there..." },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "I..." },
+        { "speaker": "Elsa", "text": "I understand..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeFontColor", "value": "#ffffff" } },
+        { "action": { "type": "changeBG", "value": "ConfessionBooth1" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePriest1" } },
+        { "speaker": "Priest", "text": "Oh? Did you mention something, My child?" },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Petrified" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "Oh! Uhh..." },
+
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Worry" } },
+        { "speaker": "Elsa", "text": "It's nothing, Father..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "sprite": "Worry" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePriest1" } },
+        { "speaker": "Priest", "text": "Hmm... Well, if it's about your problem, Just remember about our talk yesterday, ok?" },
+
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "I... I will, father..." },
+        { "speaker": "Elsa", "text": "And thank you..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialoguePriest1" } },
+        { "speaker": "Priest", "text": "May God forgive your sins, young one..." },
+        { "action": { "type": "stopBGM", "value": "Calm.mp3", "fade": true } }
+      ],
+      "next": "Search"
+    },
+
+
+
+
+    {
+      "id": "Search",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeTextbox", "value": "Textbox1" },
+        { "type": "changeBG", "value": "Home1" },
+        { "type": "playBGM", "value": "Default.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "Back at home, Elsa decided to look around the house due to the current dream she experienced last night." },
+
+        { "action": { "type": "changeBG", "value": "LivingRoom1" } },
+        { "speaker": "Narrator", "text": "While looking back at the living room, She noticed that the hanging figure wasn't there" },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Calm" } },
+        { "speaker": "Elsa", "text": "Phew... Thank goodness she's not here..." },
+        { "speaker": "Elsa", "text": "Huh? What’s that?" },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Calm" } },
+        { "speaker": "Narrator", "text": "She saw a suspicious underneath a pile of papers tucked in the cabinet." },
+
+        { "action": { "type": "setSprite", "character": "Warrant1" } },
+        { "speaker": "Narrator", "text": "A warrant arrest of the father abused the mother and her children, which lead to the father's arrest in a nearby location." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "action": { "type": "clearSprite", "character": "Warrant1" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry" } },
+        { "speaker": "Elsa", "text": "A warrant? Wait... Is this what Mom meant?" },
+        { "speaker": "Elsa", "text": "If it does... Then what is Mom telling me?" },
+        { "speaker": "Elsa", "text": "Wait... this address... A prison? Dad’s somewhere in ***** City?" }
+      ],
+      "next": "Choice 4"
+    },
+
+
+
+
+    {
+      "id": "Choice 4",
+      "type": "choice",
+      "actions": [
+        { "type": "changeTextbox", "value": "TextboxDialogueElsa1" }
+      ],
+      "lines": [
+        { "speaker": "Elsa", "text": "Hmm..." }
+      ],
+      "choices": [
+        { "text": "Visit Father", "next": "VisitFather", "effects": [{ "penance": 10 }] },
+        { "text": "Burn the Evidence", "next": "BurnPapers", "effects": [{ "penance": -10 }] }
+      ]
+    },
+
+
+
+
+    {
+      "id": "VisitFather",
+      "type": "dialogue",
+      "actions": [],
+      "lines": [
+        { "speaker": "Elsa", "text": "Maybe Mom wants me to head there?" },
+        { "speaker": "Elsa", "text": "I do need some answers after all..." },
+        { "speaker": "Elsa", "text": "... I wonder if he really is what I feared..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "action": { "type": "changeBG", "value": "Intro1" } },
+        { "speaker": "Elsa", "text": "A monster." },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "action": { "type": "stopBGM", "value": "Default.mp3", "fade": true } },
+        { "speaker": "Narrator", "text": "End of Chapter 1." }
+      ],
+      "next": "Chapter_2_Transition_Prison"
+    },
+
+
+
+
+    {
+      "id": "Chapter_2_Transition_Prison",
+      "type": "dialogue",
+      "actions": [
+        {
+          "type": "chapter_transition",
+          "params": {
+            "nextChapter": "Chapter2",
+            "startNode": "VisitFatherPath"
+          }
+        }
+      ],
+      "lines": []
+    },
+
+
+
+
+    {
+      "id": "BurnPapers",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeSprite", "character": "Elsa", "sprite": "Despair" }
+      ],
+      "lines": [
+        { "speaker": "Elsa", "text": "No... God would want me to move on." },
+        { "speaker": "Elsa", "text": "He will no longer belongs in my life." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "setSprite", "character": "Warrant2" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "speaker": "Narrator", "text": "And so, she burned the warrant." },
+        { "speaker": "Narrator", "text": "The last physical trace of her father. Reduced to ash." },
+
+        { "action": { "type": "clearSprite", "character": "Warrant2" } },
+        { "action": { "type": "changeBG", "value": "Intro1" } },
+        { "action": { "type": "stopBGM", "value": "Default.mp3", "fade": true } },
+        { "speaker": "Narrator", "text": "As she stare to the burning warrant to ashes, she continued to search more answers in her home..." },
+        { "speaker": "Narrator", "text": "End of Chapter 1." }
+      ],
+      "next": "Chapter_2_Transition_Home"
+    },
+
+
+
+
+    {
+      "id": "Chapter_2_Transition_Home",
+      "type": "dialogue",
+      "actions": [
+        {
+          "type": "chapter_transition",
+          "params": {
+            "nextChapter": "Chapter2",
+            "startNode": "BurnPapersPath"
+          }
+        }
+      ],
+      "lines": []
+    }
+  ]
+}

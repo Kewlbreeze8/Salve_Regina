@@ -1,0 +1,147 @@
+{
+    "nodes": [
+        {
+            "id": "intro1",
+            "speaker": "Narrator",
+            "text": "A piercing headache wakes her up.",
+            "next": "intro2"
+        },
+        {
+            "id": "intro2",
+            "speaker": "Narrator",
+            "text": "As she slowly open her eyes. The pain rings like a bell.",
+            "next": "choice1"
+        },
+        {
+            "id": "choice1",
+            "speaker": null,
+            "text": "Choice 1: Get out of bed?",
+            "choices": [
+                {
+                    "text": "Get out of bed",
+                    "next": "outOfBed",
+                    "penanceChange": 0
+                },
+                {
+                    "text": "Stay in bed",
+                    "next": "stayInBed",
+                    "penanceChange": 0
+                }
+            ]
+        },
+        {
+            "id": "outOfBed",
+            "speaker": "Narrator",
+            "text": "As she gets out of bed... Her head hurts a bit from the headache as she stumble towards her dresser.",
+            "next": "mirrorReflection"
+        },
+        {
+            "id": "stayInBed",
+            "speaker": "Narrator",
+            "text": "She's still tired, yet her body needs to get out. She annoyingly drags herself to her dresser.",
+            "next": "mirrorReflection"
+        },
+        {
+            "id": "mirrorReflection",
+            "speaker": "??? (Thoughts)",
+            "text": "As I look at the groggy reflection on my dresser\u2019s mirror, I can't shake the feeling that something is trapping me again... \u2026\u2026",
+            "next": "elsaIntro"
+        },
+        {
+            "id": "elsaIntro",
+            "speaker": "Elsa",
+            "text": "My name is Elsa Maria. I live alone. My parents have abandoned me. My sister is missing and I can only cling to God\u2019s merciless gaze",
+            "next": "elsaEllipsis"
+        },
+        {
+            "id": "elsaEllipsis",
+            "speaker": "Elsa",
+            "text": "\u2026\u2026",
+            "next": "clockStrikes"
+        },
+        {
+            "id": "clockStrikes",
+            "speaker": "Narrator",
+            "text": "She noticed the Clock strikes at 9 AM",
+            "next": "elsaAppointment"
+        },
+        {
+            "id": "elsaAppointment",
+            "speaker": "Elsa",
+            "text": "My Psychiatrist appointment is scheduled for today. I should better get going.",
+            "next": "chapter1Intro"
+        },
+        {
+            "id": "chapter1Intro",
+            "speaker": "Narrator",
+            "text": "Elsa Maria goes to her psychiatrist appointment, checking up her usual routine",
+            "next": "psyGreeting"
+        },
+        {
+            "id": "psyGreeting",
+            "speaker": "Psychiatrist",
+            "text": "Good morning, Elsa Maria, here is your monthly prescription.",
+            "next": "elsaResponse1"
+        },
+        {
+            "id": "elsaResponse1",
+            "speaker": "Elsa (Calm)",
+            "text": "Good morning, miss, thank you.",
+            "next": "psyFollowUp"
+        },
+        {
+            "id": "psyFollowUp",
+            "speaker": "Psychiatrist",
+            "text": "Are you feeling well? Any strange dreams again?",
+            "next": "elsaResponse2"
+        },
+        {
+            "id": "elsaResponse2",
+            "speaker": "Elsa (Calm)",
+            "text": "I am\u2026 alright. No dreams last night, just cold and empty.",
+            "next": "psyDreamComment"
+        },
+        {
+            "id": "psyDreamComment",
+            "speaker": "Psychiatrist",
+            "text": "I suppose that's good. Usually your dreams would incite violent reactions towards yourself. What about your recent thoughts? Have they been disturbing you?",
+            "next": "elsaResponse3"
+        },
+        {
+            "id": "elsaResponse3",
+            "speaker": "Elsa (Neutral)",
+            "text": "I\u2019m\u2026 not sure. I don\u2019t want to think about anything",
+            "next": "psyEncouragement"
+        },
+        {
+            "id": "psyEncouragement",
+            "speaker": "Psychiatrist",
+            "text": "Well, I am here to help. In the end change will still lie with you. I know that your past has traumatized you, but we can work together to improve.",
+            "next": "elsaResponse4"
+        },
+        {
+            "id": "elsaResponse4",
+            "speaker": "Elsa (Calm)",
+            "text": "\u2026 \u2026 Thank you. I will take my leave now.",
+            "next": "psyFarewell"
+        },
+        {
+            "id": "psyFarewell",
+            "speaker": "Psychiatrist",
+            "text": "Be safe, my dear.",
+            "next": "elsaExit"
+        },
+        {
+            "id": "elsaExit",
+            "speaker": "Elsa (Worry)",
+            "text": "...",
+            "next": "postOfficeThoughts"
+        },
+        {
+            "id": "postOfficeThoughts",
+            "speaker": "Elsa (Thoughts)",
+            "text": "I still have this heavy feeling in my head, and in my chest... The Psychiatrist just prescribed me medication... Maybe Father will be able to help me more.",
+            "next": "confessionalTransition"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+  "chapter": "Endings",
+  "startNode": "EvaluateEnding",
+  "nodes": [
+
+    {
+      "id": "EvaluateEnding",
+      "type": "system",
+      "actions": [
+        {
+          "type": "checkStats",
+          "conditions": [
+            {
+              "stat": "penance",
+              "greaterThanOrEqual": 50,
+              "next": "True_Ecstasy"
+            },
+            {
+              "stat": "penance",
+              "lessThan": 50,
+              "next": "False_Guilt"
+            }
+          ]
+        }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "" }
+      ]
+    },
+
+    {
+      "id": "True_Ecstasy",
+      "type": "system",
+      "actions": [
+        { "type": "playVideo", "value": "True_Ecstasy" }
+      ],
+      "next": "True_Ecstasy_End",
+      "lines": [
+        { "speaker": "Narrator", "text": "" }
+      ]
+    },
+
+    {
+      "id": "True_Ecstasy_End",
+      "type": "system",
+      "actions": [
+        { "type": "gotoScene", "value": "Credits" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "" }
+      ]
+    },
+
+    {
+      "id": "False_Guilt",
+      "type": "system",
+      "actions": [
+        { "type": "playVideo", "value": "False_Guilt" }
+      ],
+      "next": "False_Guilt_End",
+      "lines": [
+        { "speaker": "Narrator", "text": "" }
+      ]
+    },
+
+    {
+      "id": "False_Guilt_End",
+      "type": "system",
+      "actions": [
+        { "type": "gotoScene", "value": "Credits" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "" }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "default": {
+    "x": 15,
+    "y": 15,
+    "align": "left"
+  },
+  "textbox1": {
+    "x": 20,
+    "y": 25,
+    "align": "center"
+  },
+  "textbox2": {
+    "x": 30,
+    "y": 30,
+    "align": "right"
+  }
+}
+

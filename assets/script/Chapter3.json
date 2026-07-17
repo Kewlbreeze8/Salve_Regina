@@ -1,0 +1,258 @@
+{
+  "chapter": "Chapter3",
+  "startNode": "Limbo",
+  "nodes": [
+
+    {
+      "id": "Limbo",
+      "type": "dialogue",
+      "actions": [
+        { "type": "setBG", "value": "Intro1" },
+        { "type": "setTextbox", "value": "Textbox2" },
+        { "type": "playBGM", "value": "Dream.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "As the Darkness fills up in the void, she felt a sudden right beam towards her direction." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry" } },
+        { "speaker": "Elsa", "text": "A light? Where am I...?" },
+        { "speaker": "Elsa", "text": "Is this another dream?" },
+        { "speaker": "Elsa", "text": "..." },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "speaker": "Narrator", "text": "Curious from the beam, Elsa follows where the light shines." },
+
+        { "action": { "type": "changeBG", "value": "Dream2" } },
+        { "speaker": "Narrator", "text": "At the other side of the light, She sees her mother crying and wailing below the statue of Mother Mary." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueMother2" } },
+        { "action": { "type": "setSprite", "character": "Mother", "expression": "1", "slot": "left" } },
+        { "speaker": "Mother", "text": "Oh Holy Mary, Mother of God. Has my vocation as a woman failed in your eyes?" },
+        { "speaker": "Mother", "text": "Why must I be the outlet of my husband’s treachery?" },
+        { "speaker": "Mother", "text": "His lust... His rage... And why must my children be the fruit of his sin?" },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry", "slot": "right" } },
+        { "speaker": "Elsa", "text": "'His lust... His rage... ?'" },
+
+        { "action": { "type": "clearSprite", "character": "Mother", "expression": "1", "slot": "left" } },
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Petrified", "slot": "right" } },
+        { "speaker": "Narrator", "text": "From the darkness behind her, a hand grabs Elsa’s neck." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "speaker": "Elsa", "text": "Hah... God... Please..." },
+        { "speaker": "Elsa", "text": "Who's... Choking me..." },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Petrified" } },
+        { "speaker": "Narrator", "text": "When she looks where her Mother is, she's not there." },
+        { "speaker": "Narrator", "text": "But she feels her warmth. The hand on her neck grips harder, strangling her." },
+
+        { "action": { "type": "changeBG", "value": "Dream3" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueMother2" } },
+        { "action": { "type": "setSprite", "character": "Mother", "expression": "2", "slot": "left" } },
+        { "speaker": "Mother", "text": "The fruit of sin shall rot and never bear seed!" },
+
+        { "action": { "type": "clearSprite", "character": "Mother", "expression": "2", "slot": "left" } },
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Petrified", "slot": "right" } },
+        { "action": { "type": "playBGM", "value": "Dream.mp3"} }
+      ],
+      "next": "DivineIntervention"
+    },
+
+
+
+
+    {
+      "id": "DivineIntervention",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeFontColor", "value": "#ffffff" },
+        { "type": "changeTextbox", "value": "Textbox1" },
+        { "type": "changeBG", "value": "Bedroom2" }
+
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "She wakes up in a cold sweat on her face." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Worry" } },
+        { "speaker": "Elsa", "text": "Hah... Hah..." },
+        { "speaker": "Elsa", "text": "What...? Where am I now?" },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox1" } },
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Worry" } },
+        { "speaker": "Narrator", "text": "Looking around her, she noticed multiple Holy Crosses around the room." },
+
+        { "action": { "type": "setSprite", "character": "Mary1" } },
+        { "speaker": "Narrator", "text": "As the Mother Mary figures slowly appear, looking down at her with empty eyes." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueVoices1" } },
+        { "speaker": "Voices", "text": "You are the fruit of pain. You are the fruit of suffering." },
+
+        { "action": { "type": "clearSprite", "character": "Mary1" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "No..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "setSprite", "character": "Mary1" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueVoices1" } },
+        { "speaker": "Voices", "text": "And the fruit shall rot. Atone for your existence." },
+
+        { "action": { "type": "clearSprite", "character": "Mary1" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "No... No..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "setSprite", "character": "Mary1" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueVoices1" } },
+        { "speaker": "Voices", "text": "And the fruit shall rot." },
+
+        { "action": { "type": "clearSprite", "character": "Mary1" } },
+        { "action": { "type": "setSprite", "character": "Elsa", "expression": "Scared" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa1" } },
+        { "speaker": "Elsa", "text": "Make it stop.. I’ve had enough..." },
+
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Scared" } },
+        { "action": { "type": "setSprite", "character": "Mary2" } },
+        { "action": { "type": "changeFontColor", "value": "#000000" } },
+        { "action": { "type": "changeBG", "value": "Bedroom3" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueVoices2" } },
+        { "speaker": "Voices", "text": "You are the fruit which bears the rotten seed of sin." },
+
+        { "action": { "type": "clearSprite", "character": "Mary2" } },
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Angry" } },
+        { "speaker": "Elsa", "text": "STOP!!!" },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "action": { "type": "clearSprite", "character": "Elsa", "expression": "Angry" } },
+        { "speaker": "Narrator", "text": "Looking around the room, she looked the drawers, and dresser, hoping to find her pills." },
+        { "speaker": "Narrator", "text": "She found them beside a very sharp edged cross, shaped like a knife." }
+      ],
+      "next": "Final Choice"
+    },
+
+
+
+
+    {
+      "id": "Final Choice",
+      "type": "choice",
+      "actions": [
+        { "type": "setSprite", "character": "Mary2" },
+        { "type": "changeTextbox", "value": "Textbox2" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "What will she do?" }
+      ],
+      "choices": [
+        { "text": "Breaks all the Statues and Crosses in the room", "next": "Break", "effects": [{ "penance": -20 }] },
+        { "text": "Stab herself", "next": "Stab", "effects": [{ "penance": 20 }] }
+      ]
+    },
+
+
+
+
+    {
+      "id": "Break",
+      "type": "dialogue",
+      "actions": [
+        { "type": "stopSFX", "fade": true },
+        { "type": "changeTextbox", "value": "Textbox2" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "Overlapping voices echoed in her mind as her sanity unraveled." },
+        { "action": { "type": "changeSprite", "character": "Mary3" } },
+        { "speaker": "Narrator", "text": "Gripping the sharpened cross, she violently decapitated the statues and shattered every crucifix in sight." },
+        { "speaker": "Narrator", "text": "As the voices began to fade, she looked down... her hands soaked in blood." },
+
+        { "action": { "type": "clearSprite", "character": "Mary3" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Bloody2" } },
+        { "speaker": "Elsa", "text": "What?... No... What have I done... I..." },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "speaker": "Narrator", "text": "Overwhelmed by confusion and regret, she dropped the cross from her hand and swallowed most of the pills she had." },
+        { "speaker": "Narrator", "text": "Desperate to silence everything... she began to cough up blood." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Bloody1" } },
+        { "speaker": "Elsa", "text": "..." },
+
+
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "speaker": "Narrator", "text": "End of Chapter 3." },
+
+        { "action": { "type": "fadeOut", "duration": 1.5 } },
+        { "action": { "type": "playVideo", "value": "Pre_Ending", "params": { "nextNode": "Ending" } } }
+
+      ],
+      "next": "Ending"
+    },
+
+
+
+
+    {
+      "id": "Stab",
+      "type": "dialogue",
+      "actions": [
+        { "type": "stopSFX", "fade": true },
+        { "type": "changeTextbox", "value": "Textbox2" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "Overlapping voices echoed in her mind as her sanity unraveled." },
+        { "speaker": "Narrator", "text": "Gripping the sharpened cross... she turned it inward." },
+        { "speaker": "Narrator", "text": "Again, and again, she stabbed herself, desperate to make it stop." },
+        { "speaker": "Narrator", "text": "As the voices dimmed, she stared at her trembling, bloody hands..." },
+
+        { "action": { "type": "clearSprite", "character": "Mary2" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Bloody2" } },
+        { "speaker": "Elsa", "text": "What?... No... What have I done... I..." },
+
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "speaker": "Narrator", "text": "Numb and confused, she collapsed to the ground and swallowed most of the pills she had." },
+        { "speaker": "Narrator", "text": "Her body trembled as the blood came pouring from her lips." },
+
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
+        { "action": { "type": "changeSprite", "character": "Elsa", "expression": "Bloody1" } },
+        { "speaker": "Elsa", "text": "..." },
+
+
+        { "action": { "type": "changeTextbox", "value": "Textbox2" } },
+        { "speaker": "Narrator", "text": "End of Chapter 3." },
+
+        { "action": { "type": "fadeOut", "duration": 1.5 } },
+        { "action": { "type": "playVideo", "value": "Pre_Ending", "params": { "nextNode": "Ending" } } }
+      ],
+      "next": "Ending"
+    },
+
+
+
+
+    {
+      "id": "Ending",
+      "type": "dialogue",
+      "actions": [
+        {
+          "type": "chapter_transition",
+          "params": {
+            "nextChapter": "Endings",
+            "startNode": "EvaluateEnding"
+          }
+        }
+      ],
+      "lines": [
+        { "action": { "type": "wait", "value": 0.1 } }
+      ]
+    }
+  ]
+}

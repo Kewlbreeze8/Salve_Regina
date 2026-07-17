@@ -1,0 +1,140 @@
+{
+  "chapter": "Chapter0",
+  "startNode": "Intro",
+  "nodes": [
+    {
+      "id": "Intro",
+      "type": "dialogue",
+      "actions": [
+        { "type": "setFontColor", "value": "#ffffff" },
+        { "type": "setBG", "value": "Intro1" },
+        { "type": "setTextbox", "value": "Textbox1" },
+        { "type": "playBGM", "value": "Awake.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "Darkness. A black void stretches endlessly around her..." },
+        { "speaker": "Narrator", "text": "Until suddenly, a piercing headache jolts her awake." }
+      ],
+      "next": "Wake"
+    },
+    {
+      "id": "Wake",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeBG", "value": "Intro2" },
+        { "type": "playSFX", "value": "Ringing.wav" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "As she slowly opens her eyes, the pain echoes like a ringing bell in her skull." }
+      ],
+      "next": "Choice 0"
+    },
+    {
+      "id": "Choice 0",
+      "type": "choice",
+      "actions": [
+        { "type": "changeFontColor", "value": "#000000" },
+        { "type": "changeBG", "value": "Intro3" },
+        { "type": "changeTextbox", "value": "Textbox2" },
+        { "type": "stopSFX", "value": "Ringing.wav" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "Get out of bed?" }
+      ],
+      "choices": [
+        { "text": "Get out of bed", "next": "Out" },
+        { "text": "Stay in bed", "next": "Stay" }
+      ]
+    },
+    {
+      "id": "Out",
+      "type": "dialogue",
+      "actions": [],
+      "lines": [
+        { "speaker": "Narrator", "text": "She slowly rises. As she gets out of bed, the pain slowly fades as she approaches the dresser." }
+      ],
+      "next": "Mirror"
+    },
+    {
+      "id": "Stay",
+      "type": "dialogue",
+      "actions": [
+        { "type": "playSFX", "value": "Ringing.wav" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "She lies motionless for a moment longer, hoping the ache will pass..." },
+        { "speaker": "Narrator", "text": "But it only grows worse. Sharp. Stubborn." },
+        { "speaker": "Narrator", "text": "With a groan, she forces herself up and drags her feet toward the dresser." },
+        { "action": { "type": "stopSFX", "value": "Ringing.wav" } }
+      ],
+      "next": "Mirror"
+    },
+    {
+      "id": "Mirror",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeBG", "value": "Dresser" },
+        { "type": "changeTextbox", "value": "TextboxDialogueUnknown2" }
+      ],
+      "lines": [
+        { "speaker": "Unknown", "text": "As I stare into the groggy reflection in the dresser mirror, I can't shake the feeling..." },
+        { "speaker": "Unknown", "text": "That something invisible has its grip on me again." },
+        { "speaker": "Unknown", "text": ". . ." }
+      ],
+      "next": "ElsaIntro"
+    },
+    {
+      "id": "ElsaIntro",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeFontColor", "value": "#ffffff" },
+        { "type": "changeTextbox", "value": "TextboxDialogueElsa1" }
+      ],
+      "lines": [
+        { "speaker": "Elsa", "text": "My name is Elsa Maria. I live alone in this house where my parents once did." },
+        { "speaker": "Elsa", "text": "They left me behind, My sister is missing..." },
+        { "speaker": "Elsa", "text": "All I have left is the silence... and God’s merciless gaze." },
+        { "speaker": "Elsa", "text": ". . ." }
+      ],
+      "next": "Reminder"
+    },
+    {
+      "id": "Reminder",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeTextbox", "value": "Textbox1" }
+      ],
+      "lines": [
+        { "speaker": "Narrator", "text": "She noticed the clock struck at 9 AM." }
+      ],
+      "next": "Appointment"
+    },
+    {
+      "id": "Appointment",
+      "type": "dialogue",
+      "actions": [
+        { "type": "changeTextbox", "value": "TextboxDialogueElsa1" },
+        { "type": "stopBGM", "value": "Awake.mp3", "fade": true }
+      ],
+      "lines": [
+        { "speaker": "Elsa", "text": "I have an appointment with the psychiatrist today." },
+        { "speaker": "Elsa", "text": "I should probably get going..." }
+      ],
+      "next": "Chapter_1_Transition"
+    },
+    {
+      "id": "Chapter_1_Transition",
+      "type": "dialogue",
+      "actions": [
+        {
+          "type": "chapter_transition",
+          "params": {
+            "nextChapter": "Chapter1",
+            "startNode": "Psychiatrist"
+          }
+        }
+      ],
+      "lines": []
+    }
+  ]
+}
