@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame;
+package io.github.kewlbreeze8.Ingame;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.GL20;
@@ -10,10 +10,10 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.ScreenUtils;
 
-import io.github.Kewlbreeze8.Ingame.IngameCrew.ButtonPanel;
-import io.github.Kewlbreeze8.Ingame.Others.*;
-import io.github.Kewlbreeze8.Menu.*;
-import io.github.Kewlbreeze8.Menu.Others.*;
+import io.github.kewlbreeze8.Ingame.IngameCrew.ButtonPanel;
+import io.github.kewlbreeze8.Ingame.Others.*;
+import io.github.kewlbreeze8.Menu.*;
+import io.github.kewlbreeze8.Menu.Others.*;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;

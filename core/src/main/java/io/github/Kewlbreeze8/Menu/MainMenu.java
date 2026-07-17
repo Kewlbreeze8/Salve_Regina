@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Menu;
+package io.github.kewlbreeze8.Menu;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -14,9 +14,9 @@ import com.badlogic.gdx.scenes.scene2d.utils.*;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 
-import io.github.Kewlbreeze8.Ingame.IngameController;
-import io.github.Kewlbreeze8.Ingame.StoryManager;
-import io.github.Kewlbreeze8.Menu.Others.*;
+import io.github.kewlbreeze8.Ingame.IngameController;
+import io.github.kewlbreeze8.Ingame.StoryManager;
+import io.github.kewlbreeze8.Menu.Others.*;
 
 public class MainMenu implements Screen {
 

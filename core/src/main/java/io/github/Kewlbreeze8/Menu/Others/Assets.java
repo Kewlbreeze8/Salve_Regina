@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Menu.Others;
+package io.github.kewlbreeze8.Menu.Others;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;

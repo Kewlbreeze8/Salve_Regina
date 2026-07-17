@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame.IngameCrew;
+package io.github.kewlbreeze8.Ingame.IngameCrew;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;

@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame;
+package io.github.kewlbreeze8.Ingame;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.utils.Json;
@@ -6,7 +6,7 @@ import com.badlogic.gdx.utils.JsonReader;
 import com.badlogic.gdx.utils.JsonValue;
 import com.badlogic.gdx.utils.JsonWriter;
 
-import io.github.Kewlbreeze8.Ingame.Others.*;
+import io.github.kewlbreeze8.Ingame.Others.*;
 
 import java.util.*;
 

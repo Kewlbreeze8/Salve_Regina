@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame.IngameCrew;
+package io.github.kewlbreeze8.Ingame.IngameCrew;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Sound;
@@ -14,9 +14,9 @@ import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 
-import io.github.Kewlbreeze8.Ingame.Others.Choice;
-import io.github.Kewlbreeze8.Menu.Others.AudioManager;
-import io.github.Kewlbreeze8.Menu.Others.HoverSoundListener;
+import io.github.kewlbreeze8.Ingame.Others.Choice;
+import io.github.kewlbreeze8.Menu.Others.AudioManager;
+import io.github.kewlbreeze8.Menu.Others.HoverSoundListener;
 
 import java.util.List;
 import java.util.function.Consumer;

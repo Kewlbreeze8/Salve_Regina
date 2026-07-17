@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame.IngameCrew;
+package io.github.kewlbreeze8.Ingame.IngameCrew;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -10,7 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 
-import io.github.Kewlbreeze8.Menu.Others.AudioManager;
+import io.github.kewlbreeze8.Menu.Others.AudioManager;
 
 public class ToggleUIVisibilityButton extends Image implements com.badlogic.gdx.utils.Disposable {
 

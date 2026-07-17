@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame.Others;
+package io.github.kewlbreeze8.Ingame.Others;
 
 public class TextboxLayout {
     public float x;

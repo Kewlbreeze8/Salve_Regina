@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame;
+package io.github.kewlbreeze8.Ingame;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -17,8 +17,8 @@ import com.badlogic.gdx.utils.JsonValue;
 import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
-import io.github.Kewlbreeze8.Menu.Others.AudioManager;
-import io.github.Kewlbreeze8.Menu.Others.HoverSoundListener;
+import io.github.kewlbreeze8.Menu.Others.AudioManager;
+import io.github.kewlbreeze8.Menu.Others.HoverSoundListener;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Menu.Others;
+package io.github.kewlbreeze8.Menu.Others;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -18,7 +18,7 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
-import io.github.Kewlbreeze8.Menu.MainMenu;
+import io.github.kewlbreeze8.Menu.MainMenu;
 
 public class WarningScreen implements Screen {
 

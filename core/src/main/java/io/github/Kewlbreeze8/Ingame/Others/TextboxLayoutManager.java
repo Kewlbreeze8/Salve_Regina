@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame.Others;
+package io.github.kewlbreeze8.Ingame.Others;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;

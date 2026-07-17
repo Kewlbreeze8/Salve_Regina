@@ -1,8 +1,8 @@
-package io.github.Kewlbreeze8.lwjgl3;
+package io.github.kewlbreeze8.lwjgl3;
 
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
-import io.github.Kewlbreeze8.Menu.Others.Main;
+import io.github.kewlbreeze8.Menu.Others.Main;
 
 /** Launches the desktop (LWJGL3) application. */
 public class Lwjgl3Launcher {

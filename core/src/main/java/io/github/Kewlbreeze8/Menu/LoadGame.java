@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Menu;
+package io.github.kewlbreeze8.Menu;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.*;
@@ -13,12 +13,12 @@ import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.Timer;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 
-import io.github.Kewlbreeze8.Ingame.IngameController;
-import io.github.Kewlbreeze8.Ingame.StoryManager;
-import io.github.Kewlbreeze8.Menu.Others.AudioManager;
-import io.github.Kewlbreeze8.Menu.Others.HoverSoundListener;
-import io.github.Kewlbreeze8.Menu.Others.SaveManager;
-import io.github.Kewlbreeze8.Menu.Others.SlotUtil;
+import io.github.kewlbreeze8.Ingame.IngameController;
+import io.github.kewlbreeze8.Ingame.StoryManager;
+import io.github.kewlbreeze8.Menu.Others.AudioManager;
+import io.github.kewlbreeze8.Menu.Others.HoverSoundListener;
+import io.github.kewlbreeze8.Menu.Others.SaveManager;
+import io.github.kewlbreeze8.Menu.Others.SlotUtil;
 
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 

@@ -1,5 +1,5 @@
 // IngameUI.java
-package io.github.Kewlbreeze8.Ingame;
+package io.github.kewlbreeze8.Ingame;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.GL20;
@@ -13,10 +13,10 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 
-import io.github.Kewlbreeze8.Ingame.IngameCrew.*;
-import io.github.Kewlbreeze8.Ingame.Others.Choice;
-import io.github.Kewlbreeze8.Ingame.Others.TextboxLayout;
-import io.github.Kewlbreeze8.Ingame.Others.TextboxLayoutManager;
+import io.github.kewlbreeze8.Ingame.IngameCrew.*;
+import io.github.kewlbreeze8.Ingame.Others.Choice;
+import io.github.kewlbreeze8.Ingame.Others.TextboxLayout;
+import io.github.kewlbreeze8.Ingame.Others.TextboxLayoutManager;
 
 import java.util.List;
 import java.util.function.Consumer;

@@ -1,14 +1,14 @@
-package io.github.Kewlbreeze8.Ingame.Others;
+package io.github.kewlbreeze8.Ingame.Others;
 
 import com.badlogic.gdx.utils.Timer;
 
-import io.github.Kewlbreeze8.Ingame.IngameController;
-import io.github.Kewlbreeze8.Ingame.IngameUI;
-import io.github.Kewlbreeze8.Ingame.StoryManager;
-import io.github.Kewlbreeze8.Menu.Credits;
-import io.github.Kewlbreeze8.Menu.Others.GameInstance;
+import io.github.kewlbreeze8.Ingame.IngameController;
+import io.github.kewlbreeze8.Ingame.IngameUI;
+import io.github.kewlbreeze8.Ingame.StoryManager;
+import io.github.kewlbreeze8.Menu.Credits;
+import io.github.kewlbreeze8.Menu.Others.GameInstance;
 
-import static io.github.Kewlbreeze8.Ingame.StoryManager.setCurrentNode;
+import static io.github.kewlbreeze8.Ingame.StoryManager.setCurrentNode;
 
 import java.awt.*;
 import java.io.File;

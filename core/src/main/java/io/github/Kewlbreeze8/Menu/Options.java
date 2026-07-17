@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Menu;
+package io.github.kewlbreeze8.Menu;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.*;
@@ -10,8 +10,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.*;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 
-import io.github.Kewlbreeze8.Menu.Others.AudioManager;
-import io.github.Kewlbreeze8.Menu.Others.HoverSoundListener;
+import io.github.kewlbreeze8.Menu.Others.AudioManager;
+import io.github.kewlbreeze8.Menu.Others.HoverSoundListener;
 
 public class Options implements Screen {
 

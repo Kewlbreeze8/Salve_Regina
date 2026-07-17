@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Ingame.Others;
+package io.github.kewlbreeze8.Ingame.Others;
 
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.audio.Music;
@@ -6,10 +6,10 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.*;
 import com.badlogic.gdx.graphics.g2d.*;
 
-import io.github.Kewlbreeze8.Ingame.IngameController;
-import io.github.Kewlbreeze8.Ingame.StoryManager;
-import io.github.Kewlbreeze8.Menu.Credits;
-import io.github.Kewlbreeze8.Menu.Others.GameInstance;
+import io.github.kewlbreeze8.Ingame.IngameController;
+import io.github.kewlbreeze8.Ingame.StoryManager;
+import io.github.kewlbreeze8.Menu.Credits;
+import io.github.kewlbreeze8.Menu.Others.GameInstance;
 
 import java.util.*;
 import java.util.stream.Collectors;

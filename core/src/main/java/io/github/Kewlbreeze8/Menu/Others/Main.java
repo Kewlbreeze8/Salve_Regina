@@ -1,4 +1,4 @@
-package io.github.Kewlbreeze8.Menu.Others;
+package io.github.kewlbreeze8.Menu.Others;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -6,7 +6,7 @@ import com.badlogic.gdx.Graphics;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-import io.github.Kewlbreeze8.Menu.MainMenu;
+import io.github.kewlbreeze8.Menu.MainMenu;
 
 public class Main extends Game {
     public SpriteBatch batch;
