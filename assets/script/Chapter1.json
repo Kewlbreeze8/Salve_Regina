@@ -147,8 +147,16 @@
         { "speaker": "Narrator", "text": "..." }
       ],
       "choices": [
-        { "text": "Open the door", "next": "MotherReveal" },
-        { "text": "Gently open the door", "next": "MotherReveal" }
+        { 
+          "text": "Open the door", 
+          "next": "MotherReveal", 
+          "effects": [{ "penance": 0 }]
+        },
+        { 
+          "text": "Gently open the door", 
+          "next": "MotherReveal", 
+          "effects": [{ "penance": 0 }]
+        }
       ]
     },
 
@@ -356,6 +364,7 @@
 
         { "action": { "type": "clearSprite", "character": "FatherPast" } },
         { "action": { "type": "setSprite", "character": "Elsa", "expression": "Despair" } },
+        { "action": { "type": "changeTextbox", "value": "TextboxDialogueElsa2" } },
         { "speaker": "Elsa", "text": "..." },
         { "speaker": "Elsa", "text": "I need to know..." },
         { "speaker": "Elsa", "text": "Answer me, Dad..." },

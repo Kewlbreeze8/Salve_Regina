@@ -3,7 +3,7 @@ package io.github.kewlbreeze8.Ingame.Others;
 import com.badlogic.gdx.utils.JsonValue;
 import java.util.HashMap;
 import java.util.Map;
-
+import io.github.kewlbreeze8.Ingame.Others.Choice;
 public class PenanceManager {
 
     private int penance;
@@ -11,6 +11,17 @@ public class PenanceManager {
     private String trueEndingId;
     private String falseEndingId;
     private int threshold;
+
+    public PenanceManager() {
+        this.penance = 50;
+        this.nodeModifiers = new HashMap<>();
+
+        this.threshold = 50;
+        this.trueEndingId = "";
+        this.falseEndingId = "";
+
+        System.out.println("[PenanceManager] Default constructor loaded.");
+    }
 
     public PenanceManager(JsonValue penanceJson) {
         // Set default penance
@@ -49,6 +60,29 @@ public class PenanceManager {
         }
     }
 
+    // <<< ADD THE NEW METHOD HERE >>>
+
+    public void applyChoice(Choice choice) {
+
+        if (choice.getEffects() == null) return;
+
+        for (Map<String, Number> effect : choice.getEffects()) {
+
+            if (effect.containsKey("penance")) {
+
+                Number value = effect.get("penance");
+                int delta = value.intValue();
+
+                penance += delta;
+
+                penance = Math.max(0, Math.min(penance, 100));
+
+                System.out.println("[PENANCE] " + delta + " -> " + penance);
+            }
+        }
+    }
+
+
     public String getEndingNodeId() {
         return (penance >= threshold) ? trueEndingId : falseEndingId;
     }
@@ -56,6 +90,17 @@ public class PenanceManager {
     public int getPenance() {
         return penance;
     }
+
+    public void addPenance(int amount) {
+
+        penance += amount;
+
+        penance = Math.max(0, Math.min(100, penance));
+
+        System.out.println("[Penance] "
+                + (amount >= 0 ? "+" : "")
+                + amount
+                + " -> "
+                + penance);
+    }    
 }
-
-

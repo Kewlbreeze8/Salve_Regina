@@ -8,6 +8,8 @@ import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
+import com.badlogic.gdx.utils.JsonReader;
+import com.badlogic.gdx.utils.JsonValue;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 import io.github.kewlbreeze8.Ingame.IngameCrew.ButtonPanel;
@@ -15,7 +17,6 @@ import io.github.kewlbreeze8.Ingame.Others.*;
 import io.github.kewlbreeze8.Menu.*;
 import io.github.kewlbreeze8.Menu.Others.*;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -31,7 +32,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 
-
+import java.util.Map;
 import java.util.List;
 
 public class IngameController implements Screen {
@@ -45,6 +46,7 @@ public class IngameController implements Screen {
 
     private Line currentLine;
     private StoryNode currentNode;
+    private PenanceManager penanceManager;
     private String currentSceneId;
     private String fullLine = "";
 
@@ -64,6 +66,11 @@ public class IngameController implements Screen {
             System.out.println("[DEBUG] StoryManager not loaded. Loading default story...");
             StoryManager.loadFromJson("script/Chapter0.json");
         }
+
+        JsonReader reader = new JsonReader();
+        JsonValue penanceJson = reader.parse(Gdx.files.internal("script/Penance.json"));
+
+        penanceManager = new PenanceManager(penanceJson);
 
         Skin skin = new Skin(Gdx.files.internal("data/uiskin.json"));
         this.ui = new IngameUI(game, skin);
@@ -139,10 +146,35 @@ public class IngameController implements Screen {
             // ✅ Pass the correct dynamic index here
             int currentChoiceIndex = choiceCount;
             ui.showChoices(currentNode.choices, choice -> {
-                StoryManager.setCurrentNode(choice.getTargetSceneId());
-                Gdx.app.postRunnable(this::runCurrentNode);
-            }, currentChoiceIndex);
+            
+                if (choice.getEffects() != null) {
+                    System.out.println(choice.effects); 
+                    System.out.println(choice.effects.get(0).get("penance").getClass());
 
+                    for (Map<String, Number> effect : choice.getEffects()) {
+
+                        if (effect.containsKey("penance")) {
+
+                            int amount = effect.get("penance").intValue();
+
+                            penanceManager.addPenance(amount);
+
+                            if (amount > 0) {
+                                ui.showPenanceOverlay(true);      // Grace
+                            }
+                            else if (amount < 0) {
+                                ui.showPenanceOverlay(false);     // Sin
+                            }
+                            // amount == 0 -> show nothing
+                        }
+                    }
+                }
+                StoryManager.setCurrentNode(choice.getTargetSceneId());
+
+                Gdx.app.postRunnable(this::runCurrentNode);
+
+            }, currentChoiceIndex);
+                        
             choiceCount++; // ✅ Increment for next time
         } else {
             System.err.println("[ERROR] Choice node has no choices.");

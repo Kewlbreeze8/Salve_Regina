@@ -73,8 +73,10 @@ public class Credits implements Screen {
             "",
             "Made with LibGDX",
             "",
-            "!! This project is made under a month and !!",
-            "!! a submission for our Summative Assessment  !!"
+            "!! This project was made under a month and !!",
+            "!! a submission for our Summative Assessment  !!",
+
+            "Final Build made by: Yves Rael C. Brillantes"
         };
         for (String line : lines) {
             Label label = new Label(line, skin);

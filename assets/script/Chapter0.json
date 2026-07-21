@@ -17,6 +17,10 @@
       ],
       "next": "Wake"
     },
+
+
+
+
     {
       "id": "Wake",
       "type": "dialogue",
@@ -29,6 +33,10 @@
       ],
       "next": "Choice 0"
     },
+
+
+
+
     {
       "id": "Choice 0",
       "type": "choice",
@@ -42,10 +50,23 @@
         { "speaker": "Narrator", "text": "Get out of bed?" }
       ],
       "choices": [
-        { "text": "Get out of bed", "next": "Out" },
-        { "text": "Stay in bed", "next": "Stay" }
+        { 
+          "text": "Get out of bed", 
+          "next": "Out", 
+          "effects": [{ "penance": 0 }]
+        },
+
+        { 
+          "text": "Stay in bed", 
+          "next": "Stay", 
+          "effects": [{ "penance": 0 }] 
+        }
       ]
     },
+
+
+
+
     {
       "id": "Out",
       "type": "dialogue",
@@ -55,6 +76,10 @@
       ],
       "next": "Mirror"
     },
+
+
+
+
     {
       "id": "Stay",
       "type": "dialogue",
@@ -69,6 +94,10 @@
       ],
       "next": "Mirror"
     },
+
+
+
+
     {
       "id": "Mirror",
       "type": "dialogue",
@@ -83,6 +112,10 @@
       ],
       "next": "ElsaIntro"
     },
+
+
+
+
     {
       "id": "ElsaIntro",
       "type": "dialogue",
@@ -98,6 +131,10 @@
       ],
       "next": "Reminder"
     },
+
+
+
+
     {
       "id": "Reminder",
       "type": "dialogue",
@@ -109,6 +146,10 @@
       ],
       "next": "Appointment"
     },
+
+
+
+
     {
       "id": "Appointment",
       "type": "dialogue",
@@ -122,6 +163,10 @@
       ],
       "next": "Chapter_1_Transition"
     },
+
+
+
+
     {
       "id": "Chapter_1_Transition",
       "type": "dialogue",

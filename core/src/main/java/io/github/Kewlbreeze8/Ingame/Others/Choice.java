@@ -6,7 +6,7 @@ import java.util.Map;
 public class Choice {
     public String text;
     public String next;
-    public List<Map<String, Integer>> effects;
+    public List<Map<String, Number>> effects;
 
     public Choice() {}
 
@@ -16,6 +16,10 @@ public class Choice {
 
     public String getTargetSceneId() {
         return next;
+    }
+    
+    public List<Map<String, Number>> getEffects() {
+        return effects;
     }
 }
 

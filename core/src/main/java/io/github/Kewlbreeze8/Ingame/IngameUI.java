@@ -1,4 +1,3 @@
-// IngameUI.java
 package io.github.kewlbreeze8.Ingame;
 
 import com.badlogic.gdx.*;
@@ -35,6 +34,10 @@ public class IngameUI implements Screen {
     private final Image centerCharacterImage;
     private final Image rightCharacterImage;
     private final Image fadeOverlay;
+    private final Image penanceOverlay;
+
+    private final Texture graceTexture;
+    private final Texture sinTexture;
 
     private boolean uiVisible = true;
     private String currentTextboxStyle = "";
@@ -47,9 +50,24 @@ public class IngameUI implements Screen {
         backgroundImage = createFullscreenImage();
         stage.addActor(backgroundImage);
 
+        // --------------------
+        // Penance Overlay
+        // --------------------
+        graceTexture = new Texture(Gdx.files.internal("ingame/choices/Grace.png"));
+        sinTexture = new Texture(Gdx.files.internal("ingame/choices/Sin.png"));
+
+        penanceOverlay = new Image(new TextureRegionDrawable(new TextureRegion(graceTexture)));
+        penanceOverlay.setFillParent(true);
+        penanceOverlay.setVisible(false);
+        penanceOverlay.setTouchable(Touchable.disabled);
+
+        stage.addActor(penanceOverlay);
+
+        // Character sprites
         leftCharacterImage = createCharacterSlot(-300);
         centerCharacterImage = createCharacterSlot(0);
         rightCharacterImage = createCharacterSlot(300);
+
         stage.addActor(leftCharacterImage);
         stage.addActor(centerCharacterImage);
         stage.addActor(rightCharacterImage);
@@ -76,6 +94,7 @@ public class IngameUI implements Screen {
 
         fadeOverlay = createFadeOverlay();
         stage.addActor(fadeOverlay);
+
         fadeOverlay.toFront();
     }
 
@@ -230,6 +249,29 @@ public class IngameUI implements Screen {
         choicePanel.showChoices(choices, callback, choiceIndex);
     }
 
+    public void showPenanceOverlay(boolean grace) {
+
+        penanceOverlay.setDrawable(
+            new TextureRegionDrawable(
+                new TextureRegion(grace ? graceTexture : sinTexture)
+            )
+        );
+
+        penanceOverlay.clearActions();
+
+        penanceOverlay.getColor().a = 0f;
+        penanceOverlay.setVisible(true);
+
+        penanceOverlay.addAction(
+            Actions.sequence(
+                Actions.fadeIn(0.20f),
+                Actions.delay(0.40f),
+                Actions.fadeOut(0.40f),
+                Actions.run(() -> penanceOverlay.setVisible(false))
+            )
+        );
+    }    
+
     private void toggleUIVisibility() {
         uiVisible = !uiVisible;
         dialoguePanel.setVisible(uiVisible);
@@ -277,6 +319,40 @@ public class IngameUI implements Screen {
         return fade;
     }
 
+    public void showPenanceEffect(boolean grace) {
+
+        if (grace) {
+            penanceOverlay.setDrawable(
+                new TextureRegionDrawable(new TextureRegion(graceTexture))
+            );
+        } else {
+            penanceOverlay.setDrawable(
+                new TextureRegionDrawable(new TextureRegion(sinTexture))
+            );
+        }
+
+        penanceOverlay.getColor().a = 1f;
+        penanceOverlay.clearActions();
+
+        penanceOverlay.getColor().a = 1f;
+        penanceOverlay.setVisible(true);
+
+        penanceOverlay.addAction(
+            Actions.sequence(
+                Actions.delay(0.35f),
+                Actions.fadeOut(0.35f),
+                Actions.run(() -> {
+                    penanceOverlay.setVisible(false);
+                    penanceOverlay.getColor().a = 1f;
+                })
+            )
+        );
+    }
+
+    public void hidePenanceEffect() {
+        penanceOverlay.setVisible(false);
+    }
+
     public void fadeOut(float duration) {
         System.out.println("[UI] fadeOut triggered. Duration: " + duration + "s");
         // TODO: Add fade logic (alpha -> 1 over time)
@@ -305,8 +381,12 @@ public class IngameUI implements Screen {
 
     @Override
     public void dispose() {
+
         stage.dispose();
         dialoguePanel.dispose();
         toggleButton.dispose();
+
+        graceTexture.dispose();
+        sinTexture.dispose();
     }
 }
