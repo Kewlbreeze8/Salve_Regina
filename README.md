@@ -7,5 +7,5 @@ Salve Regina is a visual novel psychological horror game where we follow the sto
 - Changed the "K" to "k" in kewlbreeze8 imports and packages
 
 7/21/26 Update: 
-Core Mechanic Implementation
-- The Mechanic "Penance" is fully working and can change its value depending on the player's choice
+- Core Mechanic Implementation:
+  The Mechanic "Penance" is fully working and can change its value depending on the player's choice
