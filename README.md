@@ -5,3 +5,7 @@ Salve Regina is a visual novel psychological horror game where we follow the sto
 - Added Files in the Repo itself. Gonna polish some bugs and rename some files before public release
 - Renamed and removed some files
 - Changed the "K" to "k" in kewlbreeze8 imports and packages
+
+7/21/26 Update:
+Core Mechanic Implementation
+- The Mechanic "Penance" is fully working and can change its value depending on the player's choice
