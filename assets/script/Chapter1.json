@@ -147,16 +147,8 @@
         { "speaker": "Narrator", "text": "..." }
       ],
       "choices": [
-        { 
-          "text": "Open the door", 
-          "next": "MotherReveal", 
-          "effects": [{ "penance": 0 }]
-        },
-        { 
-          "text": "Gently open the door", 
-          "next": "MotherReveal", 
-          "effects": [{ "penance": 0 }]
-        }
+        { "text": "Open the door", "next": "MotherReveal", "effects": [{ "penance": 0 }] },
+        { "text": "Gently open the door", "next": "MotherReveal", "effects": [{ "penance": 0 }] }
       ]
     },
 
@@ -427,23 +419,16 @@
         { "speaker": "Elsa", "text": "I need answers..." }
       ],
       "choices": [
-        {
-          "text": "To Psychiatrist",
-          "next": "PathPsych",
-          "effects": [{ "penance": -10 }]
-        },
-        {
-          "text": "To Confessional Booth",
-          "next": "PathPriest",
-          "effects": [{ "penance": 10 }]
-        }
+        { "text": "To Psychiatrist", "next": "PathPsych", "effects": [{ "penance": -10 }] },
+        { "text": "To Confessional Booth", "next": "PathPriest", "effects": [{ "penance": 10 }] }
       ]
     },
 
 
 
 
-    { "id": "PathPsych", "type": "dialogue", "actions": [
+    {
+      "id": "PathPsych", "type": "dialogue", "actions": [
       { "type": "changeFontColor", "value": "#ffffff" },
       { "type": "changeBG", "value": "Therapy" },
       { "type": "changeTextbox", "value": "Textbox1" },

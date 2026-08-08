@@ -50,17 +50,8 @@
         { "speaker": "Narrator", "text": "Get out of bed?" }
       ],
       "choices": [
-        { 
-          "text": "Get out of bed", 
-          "next": "Out", 
-          "effects": [{ "penance": 0 }]
-        },
-
-        { 
-          "text": "Stay in bed", 
-          "next": "Stay", 
-          "effects": [{ "penance": 0 }] 
-        }
+        { "text": "Get out of bed", "next": "Out", "effects": [{ "penance": 0 }] },
+        { "text": "Stay in bed", "next": "Stay", "effects": [{ "penance": 0 }] }
       ]
     },
 

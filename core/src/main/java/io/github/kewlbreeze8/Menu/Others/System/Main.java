@@ -1,0 +1,50 @@
+package io.github.kewlbreeze8.Menu.Others.System;
+
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Graphics;
+import com.badlogic.gdx.Preferences;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+import io.github.kewlbreeze8.Menu.Others.Audio.AudioManager;
+
+public class Main extends Game {
+    public SpriteBatch batch;
+
+    @Override
+    public void create() {
+        System.out.println("Java Version: " + System.getProperty("java.version"));
+
+        Preferences prefs = Gdx.app.getPreferences("VNOptions");
+        boolean fullscreen = prefs.getBoolean("fullscreen", false);
+
+        batch = new SpriteBatch();
+
+        if (fullscreen) {
+            Graphics.DisplayMode currentMode = Gdx.graphics.getDisplayMode();
+            Gdx.graphics.setFullscreenMode(currentMode);
+        } else {
+            Gdx.graphics.setWindowedMode(1280, 720);
+        }
+
+        GameInstance.init(this);
+
+        // 🟢 Start with the WarningScreen FIRST
+        setScreen(new WarningScreen(this));
+
+        AudioManager.loadSavedVolumes();
+    }
+
+    @Override
+    public void dispose() {
+
+        System.out.println("================================");
+        System.out.println("[Main] DISPOSE CALLED");
+        new Exception().printStackTrace();
+        System.out.println("================================");
+
+        batch.dispose();
+        Assets.dispose();
+        super.dispose();
+    }
+}

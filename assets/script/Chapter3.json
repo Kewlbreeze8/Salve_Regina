@@ -240,7 +240,7 @@
 
     {
       "id": "Ending",
-      "type": "dialogue",
+      "type": "system",
       "actions": [
         {
           "type": "chapter_transition",
