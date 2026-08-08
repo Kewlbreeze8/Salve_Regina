@@ -13,4 +13,4 @@ Salve Regina is a visual novel psychological horror game where we follow the sto
 8/8/26 Update: 
 - Video Implementation Pt 1:
   Still in progress, but I managed to code the video in. I think .-."
-  Also reorganized a lot of files for File Management
+- Also reorganized a lot of files for File Management
